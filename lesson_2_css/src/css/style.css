@@ -1,0 +1,37 @@
+/* @import url('style_2.css'); */
+
+body {
+    background-color: #00000020;
+}
+
+div {
+    background-color: #00000020;
+}
+
+#block span {
+    background-color: #00000020;
+}
+
+#block p {
+    background-color: #8a00005d;
+}
+
+#block-1 p {
+    text-align: right;
+    color: rgb(9, 109, 0);
+}
+
+h1 {
+    color: #cc0700;
+    text-align: center;
+    border: 2px solid #000;
+}
+
+
+.header {
+    text-transform: uppercase;
+}
+
+#text-1 {
+    color: #c700bd;
+}

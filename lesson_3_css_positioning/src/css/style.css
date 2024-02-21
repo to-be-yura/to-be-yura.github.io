@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+
+.box-1 {
+    background-color: #00000028;
+    height: 100px;
+    overflow: hidden;
+}
+
+.box-2 {
+    background-color: #00000028;
+    height: 100px;
+    overflow: auto;
+}
+
+.box-3 {
+    background-color: #00000028;
+    height: 150px;
+    width: 50%;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.box-mini {
+    background-color: #00000028;
+    display: inline-block;
+    margin-right: -4px;
+    height: 60px;
+    width: 50%;
+}

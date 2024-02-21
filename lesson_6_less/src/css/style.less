@@ -1,0 +1,20 @@
+@bc: #0000002f;
+
+.box(@fs: 24px) {
+    background-color: @bc;
+    padding: 10px;
+    font-size: @fs;
+}
+
+
+.main {
+    .box();
+
+    p {
+        background-color: #e7ff5d;
+    }
+}
+
+.section {
+    .box(15px);
+}
