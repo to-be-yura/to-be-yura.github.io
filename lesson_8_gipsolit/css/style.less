@@ -1,0 +1,182 @@
+@import url(./reset.css);
+@import url(../fonts/stylesheet.css);
+
+// Fonts
+.reg() {
+    font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+.bold() {
+    font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+.lt() {
+    font-family: 'Proxima Nova Lt', sans-serif;
+}
+
+// Colors
+@btn-color: #FFAE00;
+@icons-color: #46b814;
+@text-color: #212529;
+@danger-color: #FF0000;
+@bg-dark: #006100;
+@bg-lite: #F3ECDC;
+@lite: #fff;
+@bc: #00000010;
+
+// Basic setting
+html {
+    font-size: 10px;
+    // line-height: 1.5;
+}
+
+body {
+    .reg();
+}
+
+.section {
+    background-color: @bc;
+    padding: 3rem 0;
+
+    .conteiner {
+        width: 1110px;
+        margin: auto;
+    }
+}
+
+.tel {
+    .bold();
+    font-weight: bold;
+    font-size: 2rem;
+    color: @text-color;
+    text-decoration: none;
+    // height: 7rem;
+    // line-height: 7rem;
+}
+
+.btn {
+    border-radius: 8px;
+    border: none;
+    background-color: @btn-color;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    color: @lite;
+    text-transform: uppercase;
+    line-height: 1.5;
+    // -webkit-transition: all 0.2s;
+    // -o-transition: all 0.2s;
+    // transition: all 0.2s;
+}
+
+//Tipography
+
+main {
+    background: @lite url(../img/main-bg.jpg) center no-repeat;
+    background-size: cover;
+
+    .header {
+        height: 7rem;
+        background-color: @bc;
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        grid-gap: 3rem;
+
+        .box {
+            background-color: @bc;
+            height: 7rem;
+            display: grid;
+            align-items: center;
+        }
+
+        &-btn {
+            font-size: 1.4rem;
+        }
+    }
+
+    .content {
+        margin-top: 10rem;
+        background-color: @bc;
+        display: grid;
+        grid-template-columns: 1fr 35rem;
+        grid-gap: 3rem;
+        color: @text-color;
+
+        .box {
+            background-color: @bc;
+            display: grid;
+            grid-gap: 4rem;
+
+            &-title {
+                grid-area: 1/1/3/2;
+            }
+
+            // &-form {
+            //     grid-column: 3/4;
+            // }
+
+            .main-title {
+                .bold();
+                font-size: 4rem;
+                margin-top: -1.45rem;
+                line-height: 1.45;
+                text-transform: uppercase;
+            }
+
+            .main-subtitle {
+                font-size: 2.4rem;
+                line-height: 1.5;
+            }
+
+            .main-price {
+                background-color: @icons-color;
+                width: max-content;
+                padding: 3rem 5rem;
+                .reg();
+                font-size: 1.8rem;
+                line-height: 1.5;
+                color: @lite;
+                text-align: center;
+
+                strong {
+                    .bold();
+                    font-size: 3rem;
+                    font-weight: bolder;
+                }
+
+                sup {
+                    top: -.5em;
+                    position: relative;
+                    font-size: 75%;
+                }
+            }
+
+            strong {
+
+                font-size: 2.2rem;
+                text-transform: uppercase;
+                font-weight: bolder;
+
+            }
+
+            &-form {
+                padding: 4rem 5rem;
+                background-color: @lite;
+
+                // justify-self: auto;
+                form {
+                    display: grid;
+                    grid-gap: 2rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        .note {
+            grid-column-start: 2;
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 1.5;
+            background-color: @bc;
+        }
+    }
+}
