@@ -1,39 +1,54 @@
+@import url(reset.css);
 html {
   font-size: 10px;
+  font-family: sans-serif;
 }
-.button {
-  background-color: #FFAE00;
-  padding: 1rem 2rem;
+.section {
+  background-color: #00000010;
+  padding: 3rem 0;
+}
+.section .conteiner {
+  width: 1110px;
+  margin: auto;
+}
+.tel {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #17101C;
+  text-decoration: none;
+}
+.btn {
   border-radius: 8px;
   border: none;
+  background-color: #FFAE00;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  color: #fff;
   text-transform: uppercase;
-}
-section {
-  padding: 10rem 0;
+  line-height: 1.5;
 }
 main {
-  padding: 2rem;
+  background: #fff url(../img/main-bg.jpg) center no-repeat;
+  background-size: cover;
 }
 .header {
   height: 7rem;
+  background-color: #00000010;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-gap: 3rem;
 }
-.wrap {
-  display: table;
-  width: 100%;
+.header .box {
+  background-color: #00000010;
   height: 7rem;
+  display: grid;
+  align-items: center;
 }
-.wrap-blok {
-  display: table-cell;
-  vertical-align: middle;
+.header-btn {
+  font-size: 1.4rem;
 }
-.logo img {
-  height: 7rem;
-}
-.phone-link {
-  display: inline-block;
-  color: #17101C;
-  font-weight: 900;
-  font-size: 2rem;
-  height: 7rem;
-  line-height: 7rem;
+.content {
+  margin-top: 10rem;
+  background-color: #00000010;
+  height: 500px;
 }
