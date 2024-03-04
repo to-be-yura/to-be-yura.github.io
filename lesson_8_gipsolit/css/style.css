@@ -7,21 +7,21 @@ body {
   font-family: 'Proxima Nova Rg', sans-serif;
 }
 .section {
-  background-color: #00000010;
+  background-color: #00000000;
   padding: 3rem 0;
 }
 .section .conteiner {
   width: 1110px;
   margin: auto;
 }
-.tel {
+.tel-link {
   font-family: 'Proxima Nova Bold', sans-serif;
-  font-weight: bold;
   font-size: 2rem;
   color: #212529;
   text-decoration: none;
 }
 .btn {
+  font-family: 'Proxima Nova Rg', sans-serif;
   border-radius: 8px;
   border: none;
   background-color: #FFAE00;
@@ -31,19 +31,27 @@ body {
   text-transform: uppercase;
   line-height: 1.5;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-family: 'Proxima Nova Bold', sans-serif;
+}
 main {
   background: #fff url(../img/main-bg.jpg) center no-repeat;
   background-size: cover;
 }
 main .header {
   height: 7rem;
-  background-color: #00000010;
+  background-color: #00000000;
   display: grid;
   grid-template-columns: 1fr auto auto;
   grid-gap: 3rem;
 }
 main .header .box {
-  background-color: #00000010;
+  background-color: #00000000;
   height: 7rem;
   display: grid;
   align-items: center;
@@ -53,32 +61,31 @@ main .header-btn {
 }
 main .content {
   margin-top: 10rem;
-  background-color: #00000010;
+  background-color: #00000000;
   display: grid;
   grid-template-columns: 1fr 35rem;
   grid-gap: 3rem;
   color: #212529;
 }
 main .content .box {
-  background-color: #00000010;
-  display: grid;
-  grid-gap: 4rem;
+  background-color: #00000000;
 }
 main .content .box-title {
+  display: grid;
+  grid-gap: 4rem;
   grid-area: 1/1/3/2;
 }
-main .content .box .main-title {
-  font-family: 'Proxima Nova Bold', sans-serif;
+main .content .box-title h1 {
   font-size: 4rem;
   margin-top: -1.45rem;
   line-height: 1.45;
   text-transform: uppercase;
 }
-main .content .box .main-subtitle {
+main .content .box-title .main-subtitle {
   font-size: 2.4rem;
   line-height: 1.5;
 }
-main .content .box .main-price {
+main .content .box-title .main-price {
   background-color: #46b814;
   width: max-content;
   padding: 3rem 5rem;
@@ -88,34 +95,59 @@ main .content .box .main-price {
   color: #fff;
   text-align: center;
 }
-main .content .box .main-price strong {
-  font-family: 'Proxima Nova Bold', sans-serif;
+main .content .box-title .main-price strong {
   font-size: 3rem;
-  font-weight: bolder;
 }
-main .content .box .main-price sup {
+main .content .box-title .main-price sup {
   top: -0.5em;
   position: relative;
   font-size: 75%;
 }
-main .content .box strong {
+main .content .box-title .main-trigger {
   font-size: 2.2rem;
   text-transform: uppercase;
-  font-weight: bolder;
-}
-main .content .box-form {
-  padding: 4rem 5rem;
-  background-color: #fff;
 }
 main .content .box-form form {
+  padding: 4rem 5rem;
+  background-color: #fff;
   display: grid;
   grid-gap: 2rem;
   text-align: center;
 }
-main .content .note {
-  grid-column-start: 2;
+main .content .box-form form .form-title {
+  font-size: 1.7rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+main .content .box-form form .box {
+  display: grid;
+}
+main .content .box-form form .box label {
+  justify-self: center;
+  display: inline-block;
+  position: absolute;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+main .content .box-form form .box input {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 1.5rem;
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+main .content .box-form form .btn {
+  height: 5.5rem;
+}
+main .content .box-form form .litle {
+  line-height: 1.5;
+}
+main .content .box-form .note {
+  margin-top: 3rem;
   text-align: center;
   font-size: 1.4rem;
   line-height: 1.5;
-  background-color: #00000010;
+  background-color: #00000000;
 }

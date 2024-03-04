@@ -19,10 +19,12 @@
 @icons-color: #46b814;
 @text-color: #212529;
 @danger-color: #FF0000;
+@border-input: #dddddd;
 @bg-dark: #006100;
 @bg-lite: #F3ECDC;
 @lite: #fff;
-@bc: #00000010;
+// @bc: #00000010;
+@bc: #00000000;
 
 // Basic setting
 html {
@@ -44,9 +46,8 @@ body {
     }
 }
 
-.tel {
+.tel-link {
     .bold();
-    font-weight: bold;
     font-size: 2rem;
     color: @text-color;
     text-decoration: none;
@@ -55,6 +56,7 @@ body {
 }
 
 .btn {
+    .reg();
     border-radius: 8px;
     border: none;
     background-color: @btn-color;
@@ -66,6 +68,15 @@ body {
     // -webkit-transition: all 0.2s;
     // -o-transition: all 0.2s;
     // transition: all 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+    .bold();
 }
 
 //Tipography
@@ -98,85 +109,129 @@ main {
         background-color: @bc;
         display: grid;
         grid-template-columns: 1fr 35rem;
+        // grid-template-rows: auto auto;
+        // grid-template-areas:
+        //     "a b"
+        //     "a c"
+        // ;
         grid-gap: 3rem;
         color: @text-color;
 
         .box {
             background-color: @bc;
-            display: grid;
-            grid-gap: 4rem;
 
             &-title {
+                display: grid;
+                grid-gap: 4rem;
                 grid-area: 1/1/3/2;
-            }
 
-            // &-form {
-            //     grid-column: 3/4;
-            // }
-
-            .main-title {
-                .bold();
-                font-size: 4rem;
-                margin-top: -1.45rem;
-                line-height: 1.45;
-                text-transform: uppercase;
-            }
-
-            .main-subtitle {
-                font-size: 2.4rem;
-                line-height: 1.5;
-            }
-
-            .main-price {
-                background-color: @icons-color;
-                width: max-content;
-                padding: 3rem 5rem;
-                .reg();
-                font-size: 1.8rem;
-                line-height: 1.5;
-                color: @lite;
-                text-align: center;
-
-                strong {
-                    .bold();
-                    font-size: 3rem;
-                    font-weight: bolder;
+                h1 {
+                    // .bold();
+                    font-size: 4rem;
+                    margin-top: -1.45rem;
+                    line-height: 1.45;
+                    text-transform: uppercase;
                 }
 
-                sup {
-                    top: -.5em;
-                    position: relative;
-                    font-size: 75%;
+                .main-subtitle {
+                    font-size: 2.4rem;
+                    line-height: 1.5;
                 }
-            }
 
-            strong {
+                .main-price {
+                    background-color: @icons-color;
+                    width: max-content;
+                    padding: 3rem 5rem;
+                    .reg();
+                    font-size: 1.8rem;
+                    line-height: 1.5;
+                    color: @lite;
+                    text-align: center;
 
-                font-size: 2.2rem;
-                text-transform: uppercase;
-                font-weight: bolder;
+                    strong {
+                        font-size: 3rem;
+                    }
 
+                    sup {
+                        top: -.5em;
+                        position: relative;
+                        font-size: 75%;
+                    }
+                }
+
+                .main-trigger {
+                    // .bold();
+                    font-size: 2.2rem;
+                    text-transform: uppercase;
+                    // font-weight: bolder;
+
+                }
             }
 
             &-form {
-                padding: 4rem 5rem;
-                background-color: @lite;
+                // display: grid;
+                // grid-template-columns: 1fr;
+                // grid-template-rows: auto auto;
+                // grid-template: auto auto/1fr;
+                // grid-gap: 3rem;
 
-                // justify-self: auto;
                 form {
+                    padding: 4rem 5rem;
+                    background-color: @lite;
                     display: grid;
                     grid-gap: 2rem;
                     text-align: center;
+
+                    .form-title {
+                        font-size: 1.7rem;
+                        line-height: 1.2;
+                        margin-bottom: 2rem;
+                        // border: 1px solid red;
+                    }
+
+                    .box {
+                        display: grid;
+                        // border: 1px solid red;
+                        // margin: 2rem 0;
+
+                        label {
+                            justify-self: center;
+                            display: inline-block;
+                            position: absolute;
+                            transform: translateY(-50%);
+                            background-color: @lite;
+                            // border: 1px solid red;
+                            padding: 0.5rem;
+                            font-size: 1.3rem;
+                        }
+
+                        input {
+                            border: 1px solid @border-input;
+                            border-radius: 5px;
+                            padding: 1.5rem;
+                            font-size: 1.7rem;
+                            line-height: 1.5;
+                        }
+                    }
+
+                    .btn {
+                        height: 5.5rem;
+                    }
+
+                    .litle {
+                        line-height: 1.5;
+                    }
+                }
+
+                .note {
+                    // grid-column-start: 2;
+                    margin-top: 3rem;
+                    text-align: center;
+                    font-size: 1.4rem;
+                    line-height: 1.5;
+                    background-color: @bc;
                 }
             }
-        }
-
-        .note {
-            grid-column-start: 2;
-            text-align: center;
-            font-size: 1.4rem;
-            line-height: 1.5;
-            background-color: @bc;
         }
     }
 }
