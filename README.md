@@ -13,4 +13,4 @@
 
 [Урок 6: CSS_LESS](/lesson_6_less "Нырнуть")
 
-[Урок 8: ВЕРСТКА HEADER](/lesson_8_header "Нырнуть")
+[Урок 8: ВЕРСТКА HEADER](/lesson_8_gipsolit "Нырнуть")
