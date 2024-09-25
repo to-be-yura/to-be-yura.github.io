@@ -1,7 +1,7 @@
 @import url(./reset.css);
 @import url(../fonts/stylesheet.css);
 
-// Fonts
+// ----------- Fonts -----------
 .reg() {
     font-family: 'Proxima Nova Rg', sans-serif;
 }
@@ -14,7 +14,7 @@
     font-family: 'Proxima Nova Lt', sans-serif;
 }
 
-// Colors
+// ----------- Colors -----------
 @btn-color: #FFAE00;
 @icons-color: #46b814;
 @text-color: #212529;
@@ -26,7 +26,7 @@
 // @bc: #00000010;
 @bc: #00000000;
 
-// Basic setting
+// ----------- Basic setting -----------
 html {
     font-size: 10px;
     // line-height: 1.5;
@@ -36,16 +36,36 @@ body {
     .reg();
 }
 
+button,
+input,
+a {
+    &:focus {
+        outline: none;
+    }
+}
+
+// ----------- GRID & ADAPTIVE -----------
+
 .section {
     background-color: @bc;
     padding: 3rem 0;
 
     .conteiner {
-        width: 1110px;
-        margin: auto;
+        max-width: 1160px;
+        margin: 0px auto;
+        padding: 0 30px;
     }
 }
 
+@media (max-width:1000px) {
+    .conteiner {
+        max-width: none;
+        margin: 0px auto;
+        padding: 0 30px;
+    }
+}
+
+// --------------------------------------------------
 .tel-link {
     .bold();
     font-size: 2rem;
@@ -54,6 +74,15 @@ body {
     // height: 7rem;
     // line-height: 7rem;
 }
+
+// a {
+//     transition: all 0.2s;
+
+//     &:hover {
+//         cursor: pointer;
+//         // text-decoration: none;
+//     }
+// }
 
 .btn {
     .reg();
@@ -67,7 +96,12 @@ body {
     line-height: 1.5;
     // -webkit-transition: all 0.2s;
     // -o-transition: all 0.2s;
-    // transition: all 0.2s;
+    transition: all 0.2s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: darken(@btn-color, 5%);
+    }
 }
 
 h1,

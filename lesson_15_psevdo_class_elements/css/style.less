@@ -1,0 +1,65 @@
+@import url(/reset.css);
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: blue;
+    }
+}
+
+// a {
+//     text-decoration: none;
+//     transition: all 0.5s;
+
+//     &:hover {
+//         text-decoration: underline;
+//     }
+
+//     &:active {
+//         color: violet;
+//     }
+
+//     &:visited {
+//         color: green;
+//     }
+// }
+
+input {
+    &:focus {
+        outline: none;
+        border: 1px solid red;
+        box-shadow: 1px 1px 10px rgb(255, 0, 0);
+    }
+}
+
+li:nth-child(2n) {
+    background-color: gray;
+}
+
+.link {
+    display: block;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        // transform: scaleX(0);
+        background-color: red;
+        transition: all 0.5s;
+    }
+
+    // &:hover::before {
+    //     transform: scaleX(1);
+    //     // color: red;
+
+    // }
+
+}
