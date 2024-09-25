@@ -3,30 +3,55 @@
   width: 200px;
   height: 200px;
   background-color: red;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 .box:hover {
-  background-color: blue;
+  background-color: #fffb00;
 }
-input:focus {
+.link1 {
+  text-decoration: none;
+}
+.link1:hover {
+  text-decoration: underline;
+}
+.link1:active {
+  color: red;
+}
+.link1:visited {
+  color: #c300ff;
+}
+input[type="text"]:focus {
   outline: none;
   border: 1px solid red;
   box-shadow: 1px 1px 10px #ff0000;
 }
+input[type="checkbox"]:checked + span {
+  background: #fc0;
+}
 li:nth-child(2n) {
   background-color: gray;
 }
-.link {
+.link2 {
   display: block;
-  width: 80px;
+  width: 200px;
   text-align: center;
   text-decoration: none;
+  color: #575757;
+  font-size: 30px;
 }
-.link::before {
+.link2::before {
   content: "";
   display: block;
   width: 100%;
-  height: 1px;
-  background-color: red;
+  height: 2px;
+  transform: scaleX(0);
+  background-color: #575757;
   transition: all 0.5s;
+}
+.link2:hover::before {
+  transform: scaleX(1);
+}
+.link2 p {
+  padding: 0;
+  margin: 0;
 }
